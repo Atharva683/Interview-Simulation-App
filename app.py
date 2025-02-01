@@ -234,7 +234,7 @@ from werkzeug.serving import run_simple
 
 application = DispatcherMiddleware(app)
 
-# Comment out the run_simple block for Vercel compatibility
-# if __name__ == "__main__":
-#     run_simple("0.0.0.0", 8080, application)
+
+if __name__ == "__main__":
+    run_simple("0.0.0.0", 8080, application)
 

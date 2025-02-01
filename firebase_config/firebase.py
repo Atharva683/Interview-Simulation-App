@@ -3,7 +3,7 @@ from firebase_admin import credentials, auth
 
 # Initialize Firebase
 
-cred = credentials.Certificate("Interview-simulator-app-main/firebase_config\interview-9cc2a-firebase-adminsdk-fbsvc-73db5f2612.json")
+cred = credentials.Certificate("firebase_config\interview-9cc2a-firebase-adminsdk-fbsvc-73db5f2612.json")
 firebase_admin.initialize_app(cred)
 
 def signup_user(email, password):

@@ -10,6 +10,10 @@ from resume_parser import parse_resume
 from rich import _console
 import firebase_admin
 
+# Initialize Firebase Admin SDK
+cred = credentials.Certificate("path/to/your/firebase/credentials.json")
+firebase_admin.initialize_app(cred)
+
 # Initialize Flask app
 app = Flask(__name__)
 app.secret_key = "AIzaSyBTxAWlKXvZ-E8rNXmnGdZdpgxQhO0V5hE"  
